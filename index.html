@@ -9,15 +9,22 @@
 
     <!-- Tu contenido actual aquí -->
 
-    <!-- Botón para redirigir a Ejemplo1.html -->
-    <button onclick="abrirEjemplo1()">Abrir Ejemplo1.html</button>
+    <!-- Botón para abrir Ejemplo1.html y ejecutar automáticamente -->
+    <button onclick="abrirYejecutarEjemplo1()">Abrir y Ejecutar Ejemplo1.html</button>
 
     <script>
-        function abrirEjemplo1() {
-            // Redirige la página actual a Ejemplo1.html
-            window.location.href = 'https://github.com/OctavioLeonGaytan/CssJavaHtml.io/blob/615bda1addb1a4eff624265d0d14b4fb9426ad36/Ejemplo1.html';
+        function abrirYejecutarEjemplo1() {
+            // Abre una nueva pestaña
+            const nuevaPestana = window.open('', '_blank');
+
+            // Utiliza fetch para obtener el contenido de Ejemplo1.html
+            fetch('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo1.html')
+                .then(response => response.text())
+                .then(html => {
+                    // Coloca el contenido en la nueva pestaña
+                    nuevaPestana.document.write(html);
+                });
         }
     </script>
 </body>
 </html>
-
