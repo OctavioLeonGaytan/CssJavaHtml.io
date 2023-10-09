@@ -18,13 +18,20 @@
             const nuevaPestana = window.open('', '_blank');
 
             // Utiliza fetch para obtener el contenido de Ejemplo1.html
-            fetch('https://github.com/OctavioLeonGaytan/CssJavaHtml.io/blob/615bda1addb1a4eff624265d0d14b4fb9426ad36/Ejemplo1.html')
+            fetch('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo1.html')
                 .then(response => response.text())
                 .then(html => {
-                    // Coloca el contenido en la nueva pestaña
-                    nuevaPestana.document.write(html);
+                    // Crea un elemento iframe y establece su contenido
+                    const iframe = document.createElement('iframe');
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.srcdoc = html;
+
+                    // Agrega el iframe a la nueva pestaña
+                    nuevaPestana.document.body.appendChild(iframe);
                 });
         }
     </script>
 </body>
 </html>
+
