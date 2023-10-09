@@ -9,7 +9,10 @@
 <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
 <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-	
-<input type="button" value="Página anterior" onClick="https://octavioleongaytan.github.io/CssJavaHtml.io/(-1);">
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<button onclick="window.history.back()">Volver Atrás</button>
 </body>
 </html>
