@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Índice JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
 </head>
 <body>
 
-<h1>¿Qué puede hacer JavaScript?</h1>
+    <!-- Tu contenido actual aquí -->
 
-<ul>
-  <li><button onclick="ejecutarActividad('https://github.com/OctavioLeonGaytan/CssJavaHtml.io/blob/2907db44240729c3943aa68f91092f32c62d3a2f/Ejemplo1.html')">JavaScript puede cambiar los atributos HTML</button></li>
-  <!-- Agrega los otros botones aquí con las rutas correspondientes -->
-</ul>
+    <!-- Botón para redirigir a Ejemplo1.html -->
+    <button onclick="abrirEjemplo1()">Abrir Ejemplo1.html</button>
 
-<script>
-  function ejecutarActividad(url) {
-    var iframe = document.createElement('iframe');
-    iframe.style.width = '100%';
-    iframe.style.height = '500px'; // Puedes ajustar la altura según sea necesario
-    iframe.src = url;
-    document.body.appendChild(iframe);
-  }
-</script>
-
+    <script>
+        function abrirEjemplo1() {
+            // Redirige la página actual a Ejemplo1.html
+            window.location.href = 'https://github.com/OctavioLeonGaytan/CssJavaHtml.io/blob/615bda1addb1a4eff624265d0d14b4fb9426ad36/Ejemplo1.html';
+        }
+    </script>
 </body>
 </html>
+
