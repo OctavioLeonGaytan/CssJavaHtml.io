@@ -16,6 +16,13 @@
             color: #3366cc; /* Color azul */
         }
 
+        /* Nuevo estilo para el contenedor de botones */
+        .botones-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra los elementos horizontalmente */
+        }
+
         button {
             background-color: #4caf50; /* Color verde */
             color: white;
@@ -24,6 +31,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 10px; /* Espacio entre los botones */
         }
     </style>
 </head>
@@ -34,13 +42,40 @@
     <!-- Título mejorado -->
     <h2>¿Qué puede hacer JavaScript?</h2>
 
-    <!-- Botón mejorado -->
-    <button onclick="abrirYejecutarEjemplo1()">Abrir y Ejecutar Ejemplo1.html</button>
+    <!-- Contenedor para los botones -->
+    <div class="botones-container">
+        <button onclick="abrirYejecutarEjemplo1()">JavaScript puede cambiar el contenido HTML</button>
+        <button onclick="abrirYejecutarEjemplo2()">JavaScript Puede cambiar los atributos HTML</button>
+        <button onclick="abrirYejecutarEjemplo3()">JavaScript puede cambiar el estilo CSS</button>
+        <button onclick="abrirYejecutarEjemplo4()">JavaScript puede ocultar elementos HTML</button>
+        <button onclick="abrirYejecutarEjemplo5()">JavaScript puede mostrar elementos HTML ocultos</button>
+        <button onclick="abrirYejecutarEjemplo6()">Hola</button>
+    </div>
 
     <script>
         function abrirYejecutarEjemplo1() {
             // Reemplaza la URL actual con Ejemplo1.html
             window.location.replace('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo1.html');
+        }
+        function abrirYejecutarEjemplo2() {
+            // Reemplaza la URL actual con Ejemplo1.html
+            window.location.replace('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo2.html');
+        }
+        function abrirYejecutarEjemplo3() {
+            // Reemplaza la URL actual con Ejemplo1.html
+            window.location.replace('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo3.html');
+        }
+        function abrirYejecutarEjemplo4() {
+            // Reemplaza la URL actual con Ejemplo1.html
+            window.location.replace('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo4.html');
+        }
+        function abrirYejecutarEjemplo5() {
+            // Reemplaza la URL actual con Ejemplo1.html
+            window.location.replace('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo5.html');
+        }
+        function abrirYejecutarEjemplo6() {
+            // Reemplaza la URL actual con Ejemplo1.html
+            window.location.replace('https://octavioleongaytan.github.io/CssJavaHtml.io/Ejemplo6.html');
         }
     </script>
 </body>
